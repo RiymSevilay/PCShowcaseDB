@@ -88,13 +88,13 @@ public class Main {
                     postController.findAll().forEach(System.out::println);
                     break;
                 }
-//                case 6: {
-//                myLikePosts();
-//                break;
-//                }
-//                case 7: {
-//                findPostsByUserIdNotlama();
-//                break;}
+                case 6: {
+                
+               break;
+                }
+               case 7: {
+                
+                break;}
                 case 0: {
                     break;
                 }
