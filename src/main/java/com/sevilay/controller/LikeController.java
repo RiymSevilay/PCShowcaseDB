@@ -28,18 +28,18 @@ public class LikeController {
         return likeService.save(like);
     }
 
-    public Like likePost() {
-        System.out.println("Hangi posta beğeni atmak istersiniz: ");
-        Long postid = Long.parseLong(sc.nextLine());
-        Like like = Like.builder()
-                .userid(userService.findById(likePost().getUserid()).get().getId())
-                .postid(postService.postBul(likePost().getPostid()).get().getId())
-                .likeDate(System.currentTimeMillis())
-                .build();
+    // public Like likePost() {
+    //     System.out.println("Hangi posta beğeni atmak istersiniz: ");
+    //     Long postid = Long.parseLong(sc.nextLine());
+    //     Like like = Like.builder()
+    //             .userid(userService.findById(likePost().getUserid()).get().getId())
+    //             .postid(postService.postBul(likePost().getPostid()).get().getId())
+    //             .likeDate(System.currentTimeMillis())
+    //             .build();
 
-        return likeService.save(like);
+    //     return likeService.save(like);
 
-    }
+    // }
 
     public Like likePost(User user) {
         postService.findAll().forEach(System.out::println);
